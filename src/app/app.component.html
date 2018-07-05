@@ -1,0 +1,11 @@
+<p>Top pane</p>
+
+<div style="display: block;max-height:300px;overflow-y:auto;" (scroll)="scrollTwo.scrollTop = scrollOne.scrollTop" #scrollOne>
+    <pdf-viewer [src]="pdfSrc" [original-size]="false"></pdf-viewer>
+</div>
+
+<p>Bottom pane</p>
+
+<div style="display: block;max-height:300px;overflow-y:auto;" #scrollTwo>
+    <pdf-viewer [src]="pdfSrc" [original-size]="false"></pdf-viewer>
+</div>
